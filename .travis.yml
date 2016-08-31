@@ -1,14 +1,14 @@
 language: android
 
 jdk:
-  - oraclejdk8
+  - oraclejdk7
 
 android:
   components:
     - tools
     - platform-tools
-    - android-24
-    - build-tools-24.0.2
+    - android-23
+    - build-tools-23.0.3
     - extra-android-m2repository
 
 # cache between builds

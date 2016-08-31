@@ -36,6 +36,7 @@ android {
 
 dependencies {
   testCompile 'junit:junit:4.12'
+  testCompile 'org.hamcrest:hamcrest-junit:2.0.0.0'
 
   compile "com.android.support:support-annotations:24.2.0"
 }

@@ -1,15 +1,18 @@
 language: android
 
 jdk:
-  - oraclejdk7
+  - oraclejdk8
 
 android:
   components:
     - tools
     - platform-tools
-    - android-23
-    - build-tools-23.0.3
+    - build-tools-24.0.2
+    - android-24
     - extra-android-m2repository
+
+after_success:
+  - .buildscript/deploy_snapshot.sh
 
 # cache between builds
 cache:

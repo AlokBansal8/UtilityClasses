@@ -1,1 +1,1 @@
-include ':utility-classes'
+include ':utility-classes', ':utility-lint'

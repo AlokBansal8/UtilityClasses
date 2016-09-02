@@ -6,4 +6,6 @@ local.properties
 .idea/
 build/
 
-/lib-classes/build/
+/utility-classes/build/
+/utility-lint/build/
+/utility-lint/

@@ -1,7 +1,6 @@
 package com.github.alokagrawal8.utilityclasses;
 
 import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -9,6 +8,7 @@ import android.os.Build;
 import android.support.annotation.IntRange;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.telephony.TelephonyManager;
 
 @SuppressWarnings({ "unused", "WeakerAccess" }) public final class DeviceInfo {
@@ -48,9 +48,7 @@ import android.telephony.TelephonyManager;
    * Returns the version string for the radio firmware.  May return null (if, for instance, the
    * radio is not currently on).
    */
-  @Nullable @TargetApi(14) public static String getNetworkStatus() {
-    // TODO: 01/09/16 Write lint checks
-    if (14 > getSystemVersion()) return "";
+  @Nullable @RequiresApi(api = 14) public static String getNetworkStatus() {
     return Build.getRadioVersion();
   }
 
